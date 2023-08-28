@@ -1050,10 +1050,11 @@ class _DayPickerState extends State<_DayPicker> {
         }
 
         Widget dayWidget = Container(
+          padding: EdgeInsets.all(2),
           decoration: decoration,
           child: Center(
             child: Text(localizations.formatDecimal(day),
-                style: dayStyle.apply(color: dayColor)),
+                style: dayStyle.apply(color: dayColor,).copyWith(fontSize: 14)),
           ),
         );
 
